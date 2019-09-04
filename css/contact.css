@@ -1,0 +1,192 @@
+@charset "utf-8";
+body{
+	margin:0;
+	padding:0;
+	background-color:#000;
+	color:#fff;
+	font-family: 'product_sans',sans-serif;
+	font-weight: 300;
+}
+.background-image{
+	position: fixed;
+	height:100%;
+	width:100%;
+	background-color: #fff;
+	top:0;
+	background: url(../resources/img/contact/background-pc.jpg) no-repeat fixed center center;
+	background-size: cover;
+	z-index: -99999;
+}
+.left{
+	position: fixed;
+	height:100%;
+	width:50%;
+	left:0;
+	top:0;
+	padding-top:7vh;
+}
+h1{
+	font-family: 'product_sans',sans-serif;
+	font-weight: 300;
+	margin-bottom: 30%;
+	margin-left: 20%;
+	width:60%;
+	font-size: 2.5em;
+}
+.text{
+	color:white;
+	text-decoration: none;
+	width:60%;
+	margin: 2% 20%;
+	font-size: 1.5em;
+}
+.social-media-text{
+	display: inline-block;
+	transition: 0.3s;
+	transform: scale(1,1);	
+}
+.social-media-text:hover{
+	transform: scale(1.1,1.1);
+}
+a{
+	color: inherit;
+	text-decoration: inherit;
+}
+img{
+	height:1em;
+	margin-right: 1em;
+}
+.right{
+	position:fixed;
+	height:100%;
+	width:50%;
+	right:0;
+	top:0;
+	padding-top:7vh;
+}
+.input{
+	color:#fff;
+	font-family: 'product_sans',sans-serif;
+	padding-top: 1.5em;
+  	resize: none;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.2em;
+}
+.input:focus{
+	outline: none;
+	caret-color: #fff;
+}
+.input::placeholder{
+	color: #ddd;
+	
+}
+#inputName {
+	width:60%;
+	margin: 5% 20% 2%;
+	background: rgba(255,255,255,0.10);
+	border: none;
+	border-bottom: solid #fff;
+	vertical-align: top;
+}
+#inputEmail{
+	width:60%;
+	margin: 2% 20%;
+	background: rgba(255,255,255,0.10);
+	border: none;
+	border-bottom: solid #fff;
+}
+#inputMessage{
+	width:60%;
+	margin: 2% 20%;
+	background: rgba(255,255,255,0.10);
+	border: none;
+	border-bottom: solid #fff;
+	height: 30vh;
+	line-height: normal; 
+}
+#formbtn{
+	border: none;
+	border-bottom: solid #fff;
+	background-color: rgba(255,255,255,0.10);
+	color: #fff;
+	width: 16%;
+	margin-left: 64%;
+	font-size: 1vw;
+	margin-top:3vh;
+	text-align: center;
+	padding: 1em;
+	transition: 0.5s;
+	transform: scale(1,1);
+}
+#formbtn:focus{
+	outline:none;
+}
+#formbtn:hover{
+	cursor:pointer;
+	transform: scale(1.1,1.1);
+}
+.thankyou_message{
+	height: 100vh;
+	width:100vw;
+	position:absolute;
+	top:3vw;
+	right:0;
+	z-index: 999;
+}
+.sub-blocker {
+	position: fixed;
+	height:100%;
+	width:100%;
+	background-color: rgba(0,0,0,0.80);
+}
+.sub-blocker:hover{
+	cursor:pointer;
+}
+.sub-blocker > img{
+	position:absolute;
+	top:2%;
+	right:2%;
+	width:3em;
+	height:3em;
+}
+.sub-blocker > div{
+	position:absolute;
+	bottom:50%;
+	width:100%;
+	text-align: center;
+	font-size: 4em;
+		
+}
+@media only screen and (max-device-width: 768px){
+	.left{
+		width:100%;
+		position:relative;
+		
+	}
+	.right{
+		width:100%;
+		position:relative;
+		
+	}
+	h1{
+		margin-left: 10%;
+		margin-bottom: 10%;
+	}
+	#formbtn{
+		font-size: 1.5em;
+	}
+	.input{
+		padding-bottom: 0.8em;
+	}
+	.input::placeholder{
+		font-size: 1.5em;
+	}
+	#inputName{
+		margin-top: 10%;
+	}
+	.background-image{
+		height:120vh;
+		background: url(../resources/img/contact/background-mb.jpg) no-repeat fixed center center;
+	}
+}

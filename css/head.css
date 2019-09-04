@@ -1,0 +1,227 @@
+@charset "utf-8";
+#nav-logo {
+	height:2vw;
+	width:25vw;
+	padding:0;
+	float: left;
+	display:block;
+	text-align: left;
+	text-decoration: none;
+}
+#nav-logo:hover{
+	cursor: pointer;
+}
+#nav-logo > img{
+	height: inherit;
+	width:2vw;
+	display:inline-block;
+	transform: rotate(0deg);
+	margin:0.5vw;
+}
+#nav-logo > img:hover{
+	transform: rotate(180deg) scale(1.2,1.2);
+}
+#nav-logo > h1{
+	font-size: 1.5vw;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'product_sans',sans-serif;
+	margin:0;
+	display:inline-block;;
+    position: absolute;
+    top: 0.75vw;
+    left: 3vw;
+	transform: scale(1, 1);
+	opacity:1;
+}
+#nav-logo > h1:hover{
+	transform: scale(1.05, 1.05);
+}
+.menu {
+	top:0;
+	width:100%;
+	height:3vw;
+	position:fixed;
+	display:block;
+	z-index: 998;
+	text-align: right;
+	background-color: rgba(0,0,0,0.40);
+}
+.menu > ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	position:fixed;
+	top:3vw;
+	right:0;
+	width:15%;
+	z-index: inherit;
+	/*background: rgba(255,255,255,0.40);*/
+}
+.menu > ul > a > li{
+	display: block;
+	text-align: center;
+	background: rgba(0,0,0,0.40);
+	height:3vw;
+	line-height: 3vw;
+	width: auto;
+	transform: scale(1,1);
+	transition: 1s;
+	font-family: 'product_sans',sans-serif;
+	z-index: inherit;
+	font-size: 1vw;
+	text-decoration: none;
+	color: #fff;
+}
+.menu > ul > a > li:hover{
+	transform: scale(1.1,1.1);
+	background: rgba(0,0,0,0.60);
+}
+a{
+	text-decoration: none;
+}
+#barcontcont{	
+    display: inline-block;
+	width:15vw;
+	height:3vw;
+	z-index: inherit;
+	/*background-color: rgba(0,0,0,0.40);*/
+}
+.container {
+	display: inline-block;
+	cursor: pointer;
+	position:absolute;
+	right:0;
+	padding:0.11vw;
+	margin-right: 1vw;
+	z-index: inherit;
+}
+.bar1, .bar2, .bar3 {
+	width: 2.5vw;
+	height: 0.25vw;
+	background-color: #fff;
+	margin: 0.5vw 0;
+	transition: 0.4s;
+	border-radius: 0.5vw;
+	z-index: inherit;
+}
+.bfchange .bar1{
+	-webkit-transform: rotate(-5deg) ;
+ 	transform: rotate(-5deg);
+}
+.change .bar1 {
+	-webkit-transform: translateY(0.75vw) rotate(-45deg) ;
+ 	transform: translateY(0.75vw) rotate(-45deg);
+}
+.afchange .bar1{
+	-webkit-transform: translateY(0.75vw) rotate(-40deg) ;
+ 	transform: translateY(0.75vw) rotate(-40deg);	
+}
+.change .bar2 {
+	opacity: 0;
+}
+.afchange .bar2{
+	opacity:0.2;
+}
+.bfchange .bar3{
+	-webkit-transform: rotate(5deg) ;
+ 	transform: rotate(5deg);
+}
+.change .bar3 {
+	-webkit-transform: translateY(-0.75vw) rotate(45deg);
+  	transform: translateY(-0.75vw) rotate(45deg);
+}
+.afchange .bar3{
+	-webkit-transform: translateY(-0.75vw) rotate(40deg) ;
+ 	transform: translateY(-0.75vw) rotate(40deg);
+}
+.nav{
+	display:none;
+	z-index: 999;
+}
+.menu-hide {
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index: 900;
+	display:none;
+}
+li:hover{
+	cursor: pointer;
+}
+
+@media only screen and (max-device-width: 768px){
+	.menu{
+		height: 5vh;
+		background: rgba(0,0,0,0.80);
+	}
+	#nav-logo{
+		height:100%;
+	}
+	#nav-logo > img{
+		height:3vh;
+		width:auto;
+		margin:1vh;
+	}
+	#nav-logo > h1{
+		display: none;
+	}
+	.bar1, .bar2, .bar3 {
+		width: 4vh;
+		height: 0.4vh;
+		background-color: #fff;
+		margin: 0.8vh 0;
+		transition: 0.4s;
+		border-radius: 0.5vw;
+		z-index: inherit;
+	}
+	#barcontcont > .container{
+		margin:0.3vh;
+		right:0;
+	}
+	.bfchange .bar1{
+		-webkit-transform: rotate(0) ;
+		transform: rotate(0);
+	}
+	.change .bar1 {
+		-webkit-transform: translateY(1.2vh) rotate(-45deg) ;
+		transform: translateY(1.2vh) rotate(-45deg);
+	}
+	.afchange .bar1{
+		-webkit-transform: translateY(1.2vh) rotate(-45deg) ;
+		transform: translateY(1.2vh) rotate(-45deg);	
+	}
+	.change .bar2 {
+		opacity: 0;
+	}
+	.afchange .bar2{
+		opacity:0;
+	}
+	.bfchange .bar3{
+		-webkit-transform: rotate(0deg) ;
+		transform: rotate(0deg);
+	}
+	.change .bar3 {
+		-webkit-transform: translateY(-1.2vh) rotate(45deg);
+		transform: translateY(-1.2vh) rotate(45deg);
+	}
+	.afchange .bar3{
+		-webkit-transform: translateY(-1.2vh) rotate(45deg) ;
+		transform: translateY(-1.2vh) rotate(45deg);
+	}
+	.menu > ul{
+		top:5vh;
+		width:100%;
+	}
+	.menu > ul > a > li{
+		height:5vh;
+		line-height: 5vh;
+		font-size: 3em;
+		padding: 0.6em 3em;
+		text-decoration: none;
+		background: rgba(0,0,0,0.80);
+	}
+	#test{
+		display: none;
+	}
+}
